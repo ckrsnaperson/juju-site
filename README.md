@@ -1,4 +1,4 @@
-# 🎀 Juju Site
+# 🎀 Jujujuju
 
 So, I know this doesn't compare to the efforts you put in to surprise me, but I do hope that you like this. Please do keep in mind that its been a while before I've done something like this, so I'm sorry if its not what you thought it would be.
 
