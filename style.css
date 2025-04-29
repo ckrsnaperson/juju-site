@@ -1,0 +1,407 @@
+/* Global reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('herbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* allows growing beyond screen */
+  height: auto; /* new line */
+  margin: 0;
+  color: #6b1e4d;
+  overflow-x: hidden;
+}
+
+body2 {
+  background: url('d1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* allows growing beyond screen */
+  height: auto; /* new line */
+  margin: 0;
+  color: #6b1e4d;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  font-size: 2.2rem;
+  font-family: 'Great Vibes', cursive;
+  color: #b30059;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #b30059;
+  margin-right: 20px; /* Space between text and timer */
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #f60515;
+  margin-right: 20px; /* Space between text and timer */
+}
+
+h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #060001;
+  margin-right: 20px; /* Space between text and timer */
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Smaller text */
+}
+
+.birthday-message {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #ff4d88;
+  text-align: center;
+  font-family: 'Cherry Bomb One', cursive;
+  background: none;
+  box-shadow: none;
+  position: relative; /* keep this */
+  bottom: 10px;
+  width: fit-content;
+  margin: 0 auto; /* center horizontally */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+.poem-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 75px;
+  margin-bottom: 100px;
+}
+
+
+.poem {
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 0.5rem 1.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+  box-shadow: 0 10px 30px rgba(5, 5, 5, 0.15);
+  color: #0a0005;
+  font-family: 'Sacramento', cursive;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: left; /* Align text to the left */
+  margin-left: 0; /* Ensure no margin on the left */
+  backdrop-filter: blur(2px);
+}
+
+.audio-section {
+  position: absolute;
+  bottom: 180px;
+  left: 50px;
+  z-index: 1000;
+}
+
+.play-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #ff99cc, #ff66b2);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff66b2, #ff3385);
+}
+
+.album-button {
+  position: absolute; /* Fixed position relative to the viewport */
+  top: 250px; /* Space from the top of the screen */
+  right: 40px; /* Space from the right side of the screen */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff66b2;
+  color: white;
+  border-radius: 1px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures the button stays on top */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.album-button:hover {
+  background-color: #ff3399;
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+
+.flowers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* .flower {
+  position: absolute;
+  top: -10%;
+  font-size: 1.5rem;
+  animation: float 12s linear infinite;
+  opacity: 0.7;
+}
+
+.flower:nth-child(1) { left: 10%; animation-delay: 0s; }
+.flower:nth-child(2) { left: 30%; animation-delay: 3s; }
+.flower:nth-child(3) { left: 60%; animation-delay: 5s; }
+.flower:nth-child(4) { left: 80%; animation-delay: 7s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+} */
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 240, 245, 0.5); 
+  z-index: -1;
+  backdrop-filter: blur(2px);
+} */
+
+#timer {
+  font-size: 1.5rem; /* Smaller font size */
+  font-weight: 500;
+  background: linear-gradient(45deg, #ff99cc, #ff66b2); /* Soft gradient */
+  color: #ffffff;
+  padding: 1rem 1.8rem; /* Reduced padding for narrower timer */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.7); /* Soft shadow */
+  border: 2px solid #ff3399; /* Cute border */
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fade-in effect */
+}
+
+/* Adding little hearts to the corners for a cute look */
+#timer::before, #timer::after {
+  content: '💗';
+  position: absolute;
+  font-size: 1.2rem;
+  color: #ff66b2;
+  top: -10px;
+}
+
+#timer::before {
+  left: -10px;
+}
+
+#timer::after {
+  right: -10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.album-item {
+  position: relative;
+  width: 400px;  /* Bigger box */
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.album-item2 {
+  position: relative;
+  width: 500px;  /* Bigger box */
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.album-item:hover {
+  transform: scale(1.05);
+}
+
+.album-item2:hover {
+  transform: scale(1.05);
+}
+
+.album-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.album-item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.album-item:hover .caption {
+  opacity: 1;
+}
+
+/* Secret Container - Position on the right side of the screen */
+/* Secret Container - Move a little lower */
+.secret-container {
+  position: absolute;  /* Fixes it to the right side */
+  top: 60%;  /* Move it a little lower */
+  right: 20px;  /* Right side of the screen */
+  transform: translateY(-50%);  /* Keeps it centered vertically */
+  z-index: 1000;  /* Ensures it's above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling the Secret Section */
+.secret-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* Reduced space between input and button */
+  width: 250px;  /* Good size for the secret box */
+}
+
+/* Textbox - Make it rounder with a different shape */
+.secret-section input {
+  padding: 15px 20px;
+  font-size: 1rem;  /* Larger text */
+  border: 2px solid #e80878;
+  border-radius: 30px;  /* Rounded corners */
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+}
+
+/* Unlock Button - Make it smaller */
+.secret-section button {
+  padding: 8px 16px;  /* Smaller padding for a smaller button */
+  font-size: 0.9rem;  /* Smaller font size */
+  background: linear-gradient(45deg, #ff99cc, #ff66b2);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+/* Unlock Button Hover Effect */
+.secret-section button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff66b2, #ff3385);
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pushes birthday message to bottom */
+  align-items: center;
+  padding-bottom: 20px; /* gap from bottom */
+}

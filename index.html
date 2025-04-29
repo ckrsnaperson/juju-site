@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juju</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- <div class="overlay"></div> -->
+    <!-- <div class="flowers">
+        <div class="flower">🌸</div>
+        <div class="flower">🌼</div>
+        <div class="flower">🌷</div>
+        <div class="flower">🌺</div>
+    </div> -->
+      
+  <div class="header">
+    <h1>ab illo💕</h1>
+    <div class="timer-container">
+      <div id="timer">Loading...</div>
+    </div>
+    <h1>💕tempore</h1>
+  </div>
+  <div class="poem-section">
+    <div class="poem">
+      <p>
+        Infinity folded into your smile<br>
+        Over time, our hearts danced closer<br>
+        Just one look and the world fades<br>
+        Together, we echo in dreams<br>
+
+        Roses envy the way you bloom in my soul<br>
+        Xenon stars can’t match your glow<br>
+        Daylight finds me tracing your name<br>
+        Only you make the silence feel whole<br>
+
+        It was always you, even before I ever knew<br>
+        Every heartbeat whispers your name.
+      </p>
+    </div>
+  </div>
+  <div class="audio-section">
+    <button class="play-button" onclick="document.getElementById('myAudio').play()">
+      &lt;3 Play Me
+    </button>
+    <audio id="myAudio">
+      <source src="msg.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>  
+  
+  <!-- Add the "View Our Album" button here -->
+  <button class="play-button album-button" onclick="window.location.href='album.html';">
+    <3 See Me
+  </button>  
+  <script src="timer.js"></script>
+  <div class="secret-container">
+    <div class="secret-section">
+      <input type="text" id="secretInput" placeholder="???" />
+      <button class="play-button" onclick="checkSecret()">Unlock</button>
+    </div>
+  </div>
+  <script>
+    function checkSecret() {
+      const input = document.getElementById("secretInput").value.trim().toLowerCase();
+      if (input === "vortexlove") {
+        window.location.href = "secret.html"; // Change this to your actual secret page
+      } else {
+        alert("Womp Womp my love, think better 💭");
+      }
+    }
+  </script>
+  <div class="birthday-message">
+    愛するケンより、バービーちゃん、お誕生日おめでとう
+  </div> 
+  </div>
+</body>
+</html>
