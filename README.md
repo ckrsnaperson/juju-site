@@ -1,27 +1,13 @@
 # 🎀 Juju Site
 
-Welcome to **Juju Site** — a little heartfelt surprise crafted with love 💌.
+So, I know this doesn't compare to the efforts you put in to surprise me, but I do hope that you like this. Please do keep in mind that its been a while before I've done something like this, so I'm sorry if its not what you thought it would be.
 
-This is a personal webpage made to showcase memories, moments, and a little magic — through photos, music, and design ✨
+**DO NOT OPEN THE FILES, JUST CLICK THE LINK BELOW TO PROCEED (unless you wanna ruin the little fun, ofc)**
 
-## 💡 Features
+👉 [jujubee](https://ckrsnaperson.github.io/juju-site/)
 
-- 📸 Cute photo album layout
-- 🎶 Background music that plays on visit
-- 🌸 Soft animations and styled fonts
-- 💖 Secret birthday message
-
-## 🚀 Live Site
-
-👉 [Visit Juju Site on GitHub Pages](https://ckrsnaperson.github.io/juju-site/)
-
-## 🛠️ Tech Used
-
-- HTML5
-- CSS3
-- Google Fonts
-- GitHub Pages for hosting
+Again, **I love you** and **Happy Birthday darling!!!**
 
 ---
 
-> _Made with love by ckrsnaperson 💕_
+> _Made with love by yours truly 💕_
